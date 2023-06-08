@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    justify-self: center;
+    align-self: center;
+}
+
+.display {
+    display: flex;
+
+}
+
+.bigContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    
+    margin: 20px;
+    margin-left: auto;
+    margin-right: 100px;
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+
+}
+
+.grid {
+    height: 37.5px;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.grid:hover {
+    background-color: aqua;
+}
+
