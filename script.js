@@ -117,6 +117,8 @@ function toggleErase()
         eraserMode = true;
         eraserButton.style.opacity = 0.5;
         eraserButton.textContent = "Eraser: Enabled"
+        colourButton.setAttribute("disabled", "disabled");
+        colourButton.style.opacity = 0.5;
     }
     else 
     {
@@ -124,6 +126,8 @@ function toggleErase()
         eraserMode = false;
         eraserButton.style.opacity = 1;
         eraserButton.textContent = "Eraser: Disabled";
+        colourButton.removeAttribute("disabled");
+        colourButton.style.opacity = 1;
     }    
 }
 
