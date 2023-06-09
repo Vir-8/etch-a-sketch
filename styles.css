@@ -1,5 +1,7 @@
 body {
     height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(54, 52, 52);
 }
 
 .main {
@@ -8,43 +10,132 @@ body {
 }
 
 .heading {
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+
+    color: rgb(255, 189, 89);
+}
+
+.menuHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
 }
 
 .menu {
     display: flex;
     flex-direction: column;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 13px;
+    background-color: #868686;
+}
+
+.options {
+    box-sizing: border-box;
+    margin: 8px;
+    height: 65px;
+    width: auto;
+    padding: 8px;
+    border-width: 4px;
+    border-radius: 13px;
+}
+
+#colourDiv {
+    border-radius: 25px;
+    height: 65px;
+    width: 65px;
+    overflow: hidden;
+
+    display: flex;
+    align-self: center;
+}
+
+#colourPicker {
+    border-color: transparent;
+    height: 100%;
+    width: 100%;
+    transform: scale(2);
+}
+
+#dimensionInfo {
+    width: 200px;
+    padding: 8px;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+    font-size: x-large;
+  }
+  
+#slider {
+    margin-bottom: 10px;
+}
+
+.gridLines, .eraser, .rainbow {
+    opacity: 1;
+}
+
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(255, 189, 89);
+    border: 1px solid rgb(83, 83, 83);
+}
+
+button:hover {
+    background-color:#f39e3c;
+    transition: 0.4s;
+}
+
+button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px rgb(196, 195, 195);
 }
 
 .display {
     display: flex;
-
+    flex: 1;
 }
 
 .bigContainer {
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    margin-left: auto;
-   
+    flex-shrink: 0;
+    background-color: rgb(211, 211, 211);
 
     margin: 20px;
-    margin-left: auto;
+    margin-left: 150px;
     margin-right: 100px;
     height: 600px;
     width: 600px;
     border: 1px solid black;
-
 }
+
+
 
 .grid {
     height: 37.5px;
     aspect-ratio: 1/1;
-    border: 1px solid black;
     box-sizing: border-box;
 }
 
 .grid:hover {
-    background-color: aqua;
+    background-color: var(--hover-colour);
+    opacity: 0.5;
 }
 
